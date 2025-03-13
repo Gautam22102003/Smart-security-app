@@ -19,16 +19,9 @@ import java.net.URL;
 import java.util.Iterator;
 import java.util.Map;
 
-/**
- * Created by NgocTri on 4/10/2016.
- */
+
 public class AccessServiceAPI {
 
-    /**
-     * Call service api with GET method and then return result form service as json string
-     * @param url
-     * @return
-     */
     public String getJSONStringFromUrl_GET(String url) {
         JSONArray jsonArray = null;
         HttpURLConnection httpURLConnection = null;
@@ -80,12 +73,7 @@ public class AccessServiceAPI {
         return jObj;
     }
 
-    /**
-     * Get json string from URL with method POST
-     * @param serviceUrl
-     * @param params post data
-     * @return json string
-     */
+    
     public String getJSONStringWithParam_POST(String serviceUrl, Map<String, String> params)
             throws IOException
     {
